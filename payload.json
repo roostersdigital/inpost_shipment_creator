@@ -1,0 +1,73 @@
+{
+  "shipment" : {
+    "sender": {
+      "first_name": "Jan",
+      "last_name": "Kowalski",
+      "company_name": "Moja Firma Sp. z o.o.",
+      "phone": "123456789",
+      "email": "jan.kowalski@example.com",
+      "address": {
+        "street": "Kwiatowa",
+        "building_number": "5",
+        "flat_number": "10A",
+        "city": "Lublin",
+        "post_code": "20-001",
+        "country_code": "PL"
+      }
+    },
+    "receiver": {
+      "first_name": "Anna",
+      "last_name": "Nowak",
+      "company_name": null,
+      "phone": "987654321",
+      "email": "anna.nowak@example.com",
+      "address": {
+        "street": "Słoneczna",
+        "building_number": "15",
+        "flat_number": null,
+        "city": "Warszawa",
+        "post_code": "00-001",
+        "country_code": "PL"
+      }
+    },
+    "service": "inpost_courier_c2c",
+    "parcels": [
+      {
+        "weight": {
+          "amount": 2.5,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 250,
+          "width": 150,
+          "height": 80,
+          "unit": "mm"
+        }
+      }
+    ],
+    "custom_attributes": {
+      "end_of_week_collection": false,
+      "allegro_standard": false,
+      "target_point": null,
+      "size": "A",
+      "sending_method": "dispatch_order"
+    },
+    "additional_services": [],
+    "reference": "YOUR_INTERNAL_ORDER_ID",
+    "comments": "Proszę o ostrożne obchodzenie się z przesyłką. Dziękuję!"
+  },
+  "dispatch_order" : {
+    "shipments": ["13492415"],
+    "comment": "Dowolny komentarz do zlecenia odbioru",
+    "name": "Przykładowa nazwa DispatchPoint",
+    "phone": "505404202",
+    "email": "sample@email.com",
+    "address": {
+      "street": "Malborska",
+      "building_number": "130",
+      "city": "Krakow",
+      "post_code": "31-209",
+      "country_code": "PL"
+    }
+  }
+}
